@@ -8,6 +8,9 @@ class Test:
     def setup_method(self):
         self.account = Account('Alex')
 
+    def teardown_method(self):
+        del self.account
+
     def test_init(self):
         assert self.account.get_name() == 'Alex'
         assert self.account.get_balance() == 0
