@@ -17,7 +17,7 @@ class Account:
         """
         return self.__account_name
 
-    def get_balance(self) -> int:
+    def get_balance(self) -> float:
         """
         Getter method used to return Account Balance
         :return:  Account's balance
